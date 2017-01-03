@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- 以下3行必須　-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="books.css">
+
+    <title>出品</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h3 class="page-header">商品の情報を入力</h3>
+        </div>
+
+
+
+        <form method="post" action="hogehoge.cgi">
+
+            <h4>出品画像</h4>
+            <h6>◯MBまでの写真を1枚アップロードできます。PDF形式のみです。</h6>
+
+            <input type="text" name="city" id="city" placeholder="" class=form-control>
+
+            <hr>
+
+            <h4>教科書名とその説明</h4>
+            <input type="text" name="city" id="city" placeholder="教科書名（必須 100文字以内）" class=form-control>
+
+            <input type="text" name="city" id="city" placeholder="教科書の説明&#13;&#10;例）2015年に購入した教科書です。直接書き込んでいますが、小テストや授業の理解に役に立つかと思います。" class="form-control height 200px">
+
+            <hr>
+
+            <div class="form-group">
+                <h4>教科書の詳細</h4>
+                <p>大学</p>
+                <select name="prefecture" id "prefecture" class=form-control>
+                    <option value="東京大学">東京大学</option>
+                    <option value="早稲田大学">早稲田大学</option>
+                    <option value="慶應大学">慶應大学</option>
+                    <option value="上智大学">上智大学</option>
+                    <option value="明治大学">明治大学</option>
+                    <option value="明治学院大学">明治学院大学</option>
+                    <option value="青山学院大学">青山学院大学</option>
+                    <option value="立教大学">立教大学</option>
+                    <option value="中央大学">中央大学</option>
+                    <option value="一橋大学">一橋大学</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>学部・学科</p>
+                <select name="prefecture" id "prefecture" class=form-control>
+                    <option value="経済学部">経済学部</option>
+                    <option value="文学部">文学部</option>
+                    <option value="商学部">商学部</option>
+                    <option value="工学部">工学部</option>
+                    <option value="法学部">法学部</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <p>授業名</p>
+                <input type="text" name="city" id="city" placeholder="授業名を入力" class=form-control>
+            </div>
+
+
+            <div class="form-group">
+                <p>商品の状態</p>
+                <select name="prefecture" id "prefecture" class=form-control>
+                    <option value="新品、未使用">新品、未使用</option>
+                    <option value="未使用に近い">未使用に近い</option>
+                    <option value="目立った傷や汚れなし">目立った傷や汚れなし</option>
+                    <option value="やや傷や汚れあり">やや傷や汚れあり</option>
+                    <option value="傷や汚れあり">傷や汚れあり</option>
+                    <option value="全体的に状態が悪い">全体的に状態が悪い</option>
+                </select>
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+                <h4>配送について</h4>
+                <p>発送元の地域</p>
+
+                <select name="prefecture" id "prefecture" class=form-control>
+                    <option value="東京都">東京都</option>
+                    <option value="神奈川県">神奈川県</option>
+                    <option value="千葉県">千葉県</option>
+                    <option value="埼玉県">埼玉県</option>
+                    <option value="茨城県">茨城県</option>
+                    <option value="栃木県">栃木県</option>
+                    <option value="群馬県">群馬県</option>
+
+
+                </select>
+            </div>
+            <div class="form-group">
+                <p>発送までの日数</p>
+                <select name="prefecture" id "prefecture" class=form-control>
+                    <option value="1~2日以内">1~2日以内</option>
+                    <option value="2~3日以内">2~3日以内</option>
+                    <option value="4~7日以内">4~7日以内</option>
+
+                </select>
+            </div>
+
+
+
+            <div class="text-right">
+                <p>
+                    <label for="title" class="control-label">販売価格　¥
+                        <label>
+                            <input type="text" name="last_name" id="last_name" placeholder="" class=form-control>
+            </div>
+
+
+            <div class="text-right">
+                <p>
+                    <label for="title" class="control-label">販売手数料(10%)　¥
+                        <label>
+                            <input type="text" name="last_name" id="last_name" placeholder="" class=form-control>
+            </div>
+
+
+            <div class="text-right">
+                <p>
+                    <label for="title" class="control-label">販売利益　¥
+                        <label>
+                            <input type="text" name="last_name" id="last_name" placeholder="" class=form-control>
+            </div>
+
+            <div class="text-center">
+                <p><a href="#">禁止されている行為</a>を必ずご確認下さい。</p>
+            </div>
+
+
+            <p></p>
+            <input type="submit" value="出品する" class="btn btn-primary">
+
+
+        </form>
+
+    </div>
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+
+
+
+
+</html>
+
+
+
+
+<!--修正必要な箇所
+・説明の記入欄を大きくする
+・選択肢を必須にする方法
+
+・発送元は関東圏だけでいいか
+
+大楽
+・出品画像
+・大学が選択されたらその大学に合わせて学部を絞る方法
+・販売手数料が自動で出るように
+・入力が間違えていたらポップアップを出す方法
+
+
+＜メルカリ見て調べる＞
+・禁止されている行為のページ作成
+
+
+want
+・横線の引き方、下線の引き方
+・文字を中央に揃える、もしくはヒトマス開ける
+
+
+
+
+-->

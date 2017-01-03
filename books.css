@@ -1,0 +1,45 @@
+.breadcrumb {
+    background-color: white;
+}
+
+.breadcrumb > li + li:before {
+    content: ">";
+}
+
+hr {
+    border-width: 1px 0px 0px 0px;
+    /* 太さ1px */
+    border-color: gray;
+    /* 線色を灰色に */
+    height: 1px;
+    /* 高さ(※古いIE用) */
+}
+
+.body_buying_detail {
+    margin-top: 70px;
+    margin-bottom: 70px
+}
+
+#item-list ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#item-list ul li {
+    display: block;
+    float: left;
+    height: 40px;
+    list-style-type: none;
+    background: ;
+    text-align: center;
+    width: 25%;
+}
+
+.purchase_proceed_button {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    /* Safari用 */
+    transform: translateY(25%);
+}

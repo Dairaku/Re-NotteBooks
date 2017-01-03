@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- 以下3行必須　-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>住所登録・変更</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="text-center">
+            <h3 class="page-header">住所登録・変更</h3>
+        </div>
+        <!--エラーの時にのみ表示する方法が記載されておらず　p108らへん
+
+  	<div class="alert alert-danger alert-dismissable">
+		<button class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  		エラー：お名前が入力されていません。</div>	
+
+  	-->
+
+        <form method="post" action="hogehoge.cgi">
+
+            <div class="form-group">
+                <p>お名前</p>
+                <p>
+                    <label for="title" class="control-label">姓）
+                        <label>
+                            <input type="text" name="last_name" id="last_name" placeholder="姓を入力" class=form-control>
+                            <p>
+                                <label for="title" class="control-label">名）
+                                    <label>
+                                        <input type="text" name="first_name" id="first_name" placeholder="名を入力" class=form-control>
+
+
+            </div>
+
+
+            <div class="form-group">
+                <p>お名前カナ</p>
+                <p>
+                    <label for="title" class="control-label">セイ）
+                        <label>
+                            <input type="text" name="last_name_kana" id="last_name_kana" placeholder="セイを入力" class=form-control>
+                            <p>
+                                <label for="title" class="control-label">メイ）
+                                    <label>
+                                        <input type="text" name="first_name_kana" id="first_name_kana" placeholder="メイを入力" class=form-control>
+            </div>
+
+            <div class="form-group">
+                <p>郵便番号</p>
+                <input type="text" name="post_number" id="post_number" placeholder="郵便番号を入力" class=form-control>
+            </div>
+
+            <div class="form-group">
+                <p>都道府県</p>
+                <select name="prefecture" id "prefecture" class=form-control>
+                    <option value="東京">東京</option>
+                    <option value="沖縄">沖縄</option>
+                    <option value="沖縄">沖縄</option>
+                    <option value="沖縄">沖縄</option>
+                    <option value="沖縄">沖縄</option>
+                    <option value="沖縄">沖縄</option>
+                    <option value="沖縄">沖縄</option>
+                    <option value="沖縄">沖縄</option>
+                    <option value="沖縄">沖縄</option>
+                    <option value="沖縄">沖縄</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>市区町村</p>
+                <input type="text" name="city" id="city" placeholder="市区町村を入力" class=form-control>
+            </div>
+
+            <div class="form-group">
+                <p>番地</p>
+                <input type="text" name="post_number" id="post_number" placeholder="番地を入力" class=form-control>
+            </div>
+
+            <div class="form-group">
+                <p>建物名</p>
+                <input type="text" name="building" id="building" placeholder="建物名を入力" class=form-control>
+            </div>
+
+            <div class="form-group">
+                <p>電話</p>
+                <input type="phonenumber" name="phonenumber" id="phonenumber" placeholder="電話番号を入力" class=form-control>
+            </div>
+
+            <input type="submit" value="変更する" class="btn btn-primary">
+        </form>
+
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
+
+
+<!--
+	・入力間違いエラーが出るように
+	・それぞれに適した内容（数字や文字）を入力するように設定
